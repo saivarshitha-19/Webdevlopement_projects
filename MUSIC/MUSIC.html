@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDIAN MUSIC</title>
+  <style>
+    body,html{
+      height: 100%;
+      background: #222222;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .container{
+      display:block;
+      position: relative;
+      margin: 40px auto;
+      height: auto;
+      width: 500px;
+      padding: 20px;
+    }
+    h2{
+      color: rgb(113, 123, 232);
+    }
+    .container ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow:auto;
+    }
+    ul li{
+      color: #aaaaaa;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 100px;
+      border-bottom: 1px solid #333;
+
+    }
+    ul li input[type=radio]{
+      position: absolute;
+      visibility: hidden;
+    }
+    ul li label{
+      display: block;
+      position: relative;
+      font-weight: 300;
+      font-size: 1.35em;
+      padding: 25px 25px 25px 80px;
+      margin: 10px auto;
+      height: 30px;
+      z-index: 9;
+      cursor: pointer;
+      -webkit-transition: all 0.25s linear;
+
+    }
+    ul li:hover label{
+      color: #ffffff;
+    }
+    ul li .check{
+      display: block;
+      position: absolute;
+      border:5px solid #aaaaaa;
+      border-radius: 100%;
+      height: 25px;
+      width: 25px;
+      top: 30px;
+      left: 20px;
+      z-index: 5;
+      transition: border .25s linear;
+      -webkit-transition: border .25s linear;
+
+    }
+    ul li:hover .check{
+      border: 5px solid #ffffff;
+    }
+    ul li .check::before{
+      display: block;
+      position: absolute;
+      content: '';
+      border-radius: 100%;
+      height: 15px;
+      width: 15px;
+      top: 5px;
+      left: 5px;
+      margin: auto;
+      transition:background .25s  linear;
+      -webkit-transition: background 0.25s linear;
+    }
+    input[type=radio]:checked~.check{
+      border: 5px solid #6ed7a8;
+    }
+    input[type=radio]:checked~.check::before{
+      background: #6ed7a8;
+    }
+    input[type=radio]:checked~label{
+      color: #6ed7a8;
+    }
+    button{
+      display: inline-block;
+      background-color:#65c59a;
+      padding: 8px;
+      width: 168px;
+      color: black;
+      text-align: center;
+      border: 4px solid #cccccc;
+      border-radius: 5px;
+      font-size: 20px;
+      cursor: pointer;
+      margin: 15px;
+      
+    }
+    button::after{
+      content: "";
+      position: absolute;
+      right: 0px;
+      top:0px;
+      z-index:-1;
+      width: 0%;
+      height: 1px;
+      background: #222222;
+    }
+    
+    .alert{
+         box-sizing: border-box;
+         background-color: #65c59a;
+         width: 100%;
+         position: relative;
+         top: 0;
+         left: 0;
+         z-index: 300;
+         padding: 20px 40px;
+         color: #030f06;
+         display:block;
+        
+         
+    }
+    .alert h2{
+      font-size: 22px;
+      color: #232323;
+      margin-top: 0;
+    }
+    .alert p{
+      line-height: 1.6em;
+      font-size: 18px;
+    }
+    .alert a{
+      color: #232323;
+      font-weight: bold;
+    }
+    .row{
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+    .row img{
+      width: 100%;
+      height: 100%;
+      margin: 10px;
+    }
+    .column{
+      width: 375px;
+      height: 200px;
+      margin:10px;
+    }
+    .topic{
+      background-color: rgb(139 139 231);
+    
+      padding: 20px 40px;
+      margin: 6px 1px ;
+      width: 100%;
+      display:block;
+      box-sizing: border-box;
+    }
+    .topic p{
+      line-height: 1.6em;
+      font-size: 18px;
+    }
+    .topic h3{
+      font-size: 22px;
+      color:#232323 ;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+   <div class="alert">
+
+    <h2> Hey!Read me...</h2>
+    <p>The music of India includes multiple varieties of classical music, folk music, filmi, and Indian pop. Indian classical music is divided into two main traditions: Carnatic and Hindustani. Folk music is an important part of India’s musical heritage and is characterized by its own unique rhythms, melodies, and lyrics. Filmi music is the music used in Indian films and is a blend of classical, folk, and popular music. Indian pop, also known as Indipop, is a genre of music that combines Indian classical and folk music with Western pop music.
+      <a target="_blank"  title="SVG radio buttons"></a>
+      
+    </p>
+    <div class="row">
+      <div class="column"><img src="music.jpg"></div>
+      <div class="column"><img src="music2.jpg"></div>
+      <div class="column"><img src="music3.jpeg"></div>
+    </div>
+  
+  </div>
+   </div>
+   <div class="topic">
+     <h3>CARNATIC MUSIC:</h3>
+     <p>Carnatic music is a traditional style of music that originated in southern India. It's a form of classical music that's rich in melody and rhythm. In Carnatic music, singers use their voice and musicians play instruments like the violin, flute, veena, and mridangam.The music is structured around ragas (melodic scales) and talas (rhythmic patterns). Musicians improvise within these structures, creating intricate melodies and rhythms. Carnatic music often involves intricate patterns, known as 'ragam,' which establish the melody, and 'talam,' which establishes the rhythm.</p>
+     
+     <h3>HINDUSTANI MUSIC:</h3>
+     <p>Hindustani music is a traditional style of music from North India. It's a beautiful blend of melody, rhythm, and emotion. It involves singing (usually accompanied by instruments) and follows specific scales called ragas and rhythms called taal.In Hindustani music, there are different ragas, each with its unique mood and set of notes. These ragas are like musical recipes, guiding the musician on which notes to play and how to express different emotions.</p>
+     <h3>FOLK MUSIC:</h3>
+     <P> Folk music is like a musical storyteller from the past. It's the kind of music that regular people in a certain place or culture would create and sing. It's often passed down through generations, carrying stories, traditions, and emotions of a community.Folk music can be about everyday life, historical events, or cultural celebrations. It's usually played with traditional instruments and reflects the unique identity and experiences of a specific group of people. </P>
+     <h3>POP MUSIC:</h3>
+     <p>Pop music is a type of popular music that's catchy and easy to enjoy. It often features simple melodies, repetitive lyrics, and a rhythmic beat that makes you want to dance or sing along. Pop songs are created to be widely liked and get played on the radio a lot.They usually focus on everyday feelings and experiences, making them relatable to many people. Pop music often includes a mix of different musical styles and is known for its memorable tunes that can quickly get stuck in your head.    </p>
+     
+   </div>
+   <div class="container">
+    <h2> Your Favourite music</h2>
+    <ul>
+      <li>
+        <input type="radio" id="s-option" name="selector">
+        <label for ="s-option">Carnatic Music</label>
+        <div class="check"><div class="inside"></div></div>
+      </li>
+      <li>
+        <input type="radio" id="t-option" name="selector">
+        <label for ="t-option">Hindustani Music</label>
+        <div class="check"><div class="inside"></div></div>
+      </li>
+      <li>
+        <input type="radio" id="z-option" name="selector">
+        <label for ="z-option">Folk Music</label>
+        <div class="check"><div class="inside"></div></div>
+      </li>
+      <li>
+        <input type="radio" id="f-option" name="selector">
+        <label for ="f-option">Pop Music</label>
+        <div class="check"></div>
+      </li>
+      <li>
+        <button type="submit" onclick="alert('You are Response is Submitted')">Submit</button>
+      </li>
+    </ul>
+   </div>
+</body>
+</html>
